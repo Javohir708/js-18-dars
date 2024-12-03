@@ -236,3 +236,122 @@ button, input{
     color: #3C92A2;
     font-size: 14px;
 }
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 290px;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 12px;
+    display: none;
+    transition: .5s;
+}
+.modal__btn {
+    cursor: pointer;
+}
+.modal__wrapper {
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.modal__info {
+    text-indent: 1.2em;
+    display: inline-block;
+    margin-right: 170px;
+}
+.modal__btn {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+.fa-xmark {
+    font-size: 20px;
+}
+.modal__title {
+    padding: 10px;
+    font-size: 14px;
+}
+.modal__sign {
+    background-color: #FFD814;
+    width: 90%;
+    height: 30px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.modal__input {
+    margin-left: 40px;
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #6b6767;
+    text-indent: 1.2em;
+}
+.modal__apply {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #676262;
+    padding: 6px 25px;
+    cursor: pointer;
+}
+
+.modal__submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #FFD814;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 100;
+    transition: .5s;
+}
+.sidebar.show {
+    left: 0;
+}
+.sidebar__btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.fa-regular {
+    font-size: 25px;
+}
+.sidebar__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-indent: .2em;
+    cursor: context-menu;
+}
+#topId {
+    margin-top: 36px;
+}
+.sidebar__item {
+    line-height: 40px;
+    text-indent: 1.2em;
+    font-weight: 500;
+}

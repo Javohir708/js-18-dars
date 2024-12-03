@@ -13,7 +13,7 @@
         <nav class="navbar">
             <div class="navbar__left">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo">
-                <span class="delivery">Deliver to <strong><i class="fa-solid fa-location-dot" style="color: #fafafa;"></i> Uzbekistan</strong></span>
+                <span onclick="modalShow()" class="delivery">Deliver to <strong><i class="fa-solid fa-location-dot" style="color: #fafafa;"></i> Uzbekistan</strong></span>
             </div>
             
             <div class="navbar__center">
@@ -40,7 +40,7 @@
     <div class="sub-navbar">
         <div class="sub-navbar__container">
             <ul class="sub-navbar__list">
-                <li><a href="#" style="font-weight: 600;"><i class="fa-solid fa-bars" style="color: #fafcff; font-size: 16px;"></i> All</a></li>
+                <li><a href="#" onclick="showSidebar()" style="font-weight: 600;"><i class="fa-solid fa-bars" style="color: #fafcff; font-size: 16px;"></i> All</a></li>
                 <li><a href="#">Today's Deals</a></li>
                 <li><a href="#">Customer Service</a></li>
                 <li><a href="#">Registry</a></li>
@@ -48,6 +48,71 @@
                 <li><a href="#">Sell</a></li>
             </ul>
         </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <h4 class="modal__info">Choose your location</h4> 
+            <button onclick="modalClose()" class="modal__btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <p class="modal__title">Delivery options and delivery speeds may vary for different locations</p>
+        <button class="modal__sign">Sign in to see address</button>
+
+        <input class="modal__input" type="text" required>
+        <button class="modal__apply">Apply</button>
+
+        <button class="modal__submit">Done</button>
+    </div>
+
+    <div class="sidebar">
+        <button onclick="closeSidebar()" class="sidebar__btn"><i class="fa-regular fa-circle-xmark"></i></button>
+        <ul>
+            <h4 class="sidebar__title" id="topId">Digital Content & Devices</h4>
+            <li class="sidebar__item">
+                <a href="#">Amazon Music</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Kindle E-readers & Books</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Amazon AppStore</a>
+            </li>
+            
+            <h4 class="sidebar__title">Shop by Department</h4>
+            <li class="sidebar__item">
+                <a href="#">Electronics</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Computers</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Smart Home</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Arts & Crafts</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">See all</a>
+            </li>
+
+            <h4 class="sidebar__title">Programs & Features</h4>
+            <li class="sidebar__item">
+                <a href="#">Gift Cards</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Shop by interest</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">Amazon live</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">International Shopping</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="#">See all</a>
+            </li>
+        </ul>
     </div>
 
     <section class="hero">
